@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+<item>
+    <shape>
+        <solid android:color="@color/gold"/>
+    </shape>
+</item>
+    <item android:bottom="280dp">
+        <shape>
+            <solid android:color="@color/primary"/>
+
+            <corners
+                android:bottomRightRadius="100dp"
+                android:topLeftRadius="100dp"
+                android:bottomLeftRadius="100dp"
+                android:topRightRadius="100dp"
+                />
+
+        </shape>
+
+    </item>
+</layer-list>

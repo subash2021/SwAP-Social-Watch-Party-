@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "751277427260",
+    "project_id": "swap-5ff31",
+    "storage_bucket": "swap-5ff31.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:751277427260:android:8d138ae04efad0ad7ad139",
+        "android_client_info": {
+          "package_name": "com.codepath.rkpandey.swap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "751277427260-5ng32oh54jshvl6o6p18irhpi9n871p9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZzZwPphEt_I0f9e95V-08gIBDar2HdNs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "751277427260-5ng32oh54jshvl6o6p18irhpi9n871p9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
