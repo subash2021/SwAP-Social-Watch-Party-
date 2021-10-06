@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal" >
+        <!-- A input text type view to enter the search keyword(s)
+        and setting the keyboard action to actionSearch so that it shows a search icon
+        for clicking after a text has been entered -->
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/search_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType=""
+            android:maxLines="5"
+            android:minLines="3" >
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+        <Button
+            android:id="@+id/button_search"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="@string/search_youtube_btn"/>
+    </LinearLayout>
+
+    <!-- RecyclerView will show the result in a ordered manner
+    by infalting the video_item.xml which has the CardView set to show
+    Thumbnail, Video title, id and short description -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/videos_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="5dp"
+        />
+
+</LinearLayout>
