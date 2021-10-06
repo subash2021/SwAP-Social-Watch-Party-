@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "751277427260",
+    "firebase_url": "https://swap-5ff31-default-rtdb.firebaseio.com",
+    "project_id": "swap-5ff31",
+    "storage_bucket": "swap-5ff31.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:751277427260:android:2cc83c58fe4f87797ad139",
+        "android_client_info": {
+          "package_name": "com.codepath.rkpandey.swap.fragments"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "751277427260-8j0se97p7rsp7egjbjveeatf2g2okrrm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.codepath.rkpandey.swap.fragments",
+            "certificate_hash": "63959cf469c6db22dde1a3e42995a70ff5af5143"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABu1cidI5Iu9IP7gdL6MP7NhNhr432R_8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
