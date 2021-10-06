@@ -17,11 +17,19 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
 
        Button SignOutButton = findViewById(R.id.signOutButton);
+       Button YouTubeButton = findViewById(R.id.youtubebtn);
        SignOutButton.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
                FirebaseAuth.getInstance().signOut();
                startActivity(new Intent(HomeActivity.this,MainActivity.class));
+               finish();
+           }
+       });
+       YouTubeButton.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               startActivity(new Intent(HomeActivity.this, YouTubeMainActivity.class));
                finish();
            }
        });

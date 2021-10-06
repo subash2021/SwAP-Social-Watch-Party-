@@ -4,16 +4,20 @@ plugins {
 }
 
 android {
-    compileSdk 30
+    compileSdk 25
+
+    //buildTools to be used for compiling
+    buildToolsVersion "25.0.3"
 
     defaultConfig {
         applicationId "com.codepath.rkpandey.swap"
-        minSdk 21
-        targetSdk 30
+        minSdk 19
+        targetSdk 25
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
     }
 
     buildTypes {
@@ -22,20 +26,78 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    configurations.all {
+        resolutionStrategy.force 'com.google.code.findbugs:jsr305:3.0.1'
+    }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    compileSdkVersion 31
+    buildToolsVersion '31.0.0'
+    dependenciesInfo {
+        includeInApk true
+        includeInBundle true
+    }
+    buildFeatures {
+        viewBinding true
+    }
 }
 
 dependencies {
+
+    //implementation 'com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava'
+    //implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0', {
+    // exclude group: 'com.android.support', module: 'support-annotations'
+    //})
+    //implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'com.android.support.constraint:constraint-layout:2.0.4'
 
     implementation 'androidx.appcompat:appcompat:1.3.1'
     implementation 'com.google.android.material:material:1.4.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'com.google.firebase:firebase-auth:21.0.1'
-    testImplementation 'junit:junit:4.+'
+    implementation files ('libs/YouTubeAndroidPlayerApi.jar')
+    implementation 'androidx.recyclerview:recyclerview:1.3.0-alpha01'
+    implementation 'androidx.annotation:annotation:1.2.0'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.3.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1'
+    testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation 'com.google.android.material:material:1.4.0'
+
+
+
+    //implementation 'com.google.firebase:firebase-inappmessaging-display:20.1.0'
+    //implementation 'com.google.guava:guava:27.0.1-android'
+
+    //implementation 'com.google.android.gms:play-services-drive:17.0.0'
+    implementation 'com.google.android.gms:play-services-base:17.6.0'
+
+    //Picasso library dependency
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
+    //google client for android api dependency
+    //excluding org.apache.httpcomponents so as to resolve anonymity
+    implementation ('com.google.api-client:google-api-client-android:1.32.1') {
+        exclude group: 'org.apache.httpcomponents'
+    }
+
+    //youtube data api v3 dependency
+    //excluding org.apache.httpcomponents so as to resolve anonymity
+    implementation ('com.google.apis:google-api-services-youtube:v3-rev222-1.25.0') {
+        exclude group: 'org.apache.httpcomponents'
+    }
+    //dependency for JSON support
+    //implementation files('libs/gson-2.1.jar')
+
+    //dependency for finding bugs
+    //implementation files('libs/jsr305-1.3.9.jar')
+
+    //YouTubeAndroidPlayerApi for playing youtube videos
+    //implementation files('libs/YouTubeAndroidPlayerApi.jar')
 }

@@ -10,9 +10,26 @@
         <entry key="..\:/UTA/SWaP/app/src/main/res/drawable/whitebackground.xml" value="0.22882882882882882" />
         <entry key="..\:/UTA/SWaP/app/src/main/res/layout/activity_home.xml" value="0.176" />
         <entry key="..\:/UTA/SWaP/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/UTA/SWaP/app/src/main/res/layout/activity_play2.xml" value="0.11381578947368422" />
+        <entry key="..\:/UTA/SWaP/app/src/main/res/layout/activity_playing.xml" value="0.1" />
         <entry key="..\:/UTA/SWaP/app/src/main/res/layout/activity_splash_screen.xml" value="0.264" />
-        <entry key="..\:/UTA/SWaP/app/src/main/res/layout/fragment_sign_in.xml" value="0.1" />
+        <entry key="..\:/UTA/SWaP/app/src/main/res/layout/activity_video_detail.xml" value="0.25" />
+        <entry key="..\:/UTA/SWaP/app/src/main/res/layout/activity_you_tube_adapter.xml" value="0.18782894736842104" />
+        <entry key="..\:/UTA/SWaP/app/src/main/res/layout/activity_you_tube_connect.xml" value="0.11578947368421053" />
+        <entry key="..\:/UTA/SWaP/app/src/main/res/layout/activity_you_tube_main.xml" value="0.16666666666666666" />
+        <entry key="..\:/UTA/SWaP/app/src/main/res/layout/activity_you_tube_swap.xml" value="0.2" />
+        <entry key="..\:/UTA/SWaP/app/src/main/res/layout/activity_youtube_adapter.xml" value="0.18782894736842104" />
+        <entry key="..\:/UTA/SWaP/app/src/main/res/layout/activity_youtube_connect.xml" value="0.18881578947368421" />
+        <entry key="..\:/UTA/SWaP/app/src/main/res/layout/activity_youtube_play_page.xml" value="0.16666666666666666" />
+        <entry key="..\:/UTA/SWaP/app/src/main/res/layout/activity_youtube_player_view.xml" value="0.1" />
+        <entry key="..\:/UTA/SWaP/app/src/main/res/layout/activity_youtube_swap_acitivity.xml" value="0.16666666666666666" />
+        <entry key="..\:/UTA/SWaP/app/src/main/res/layout/fragment_sign_in.xml" value="0.16666666666666666" />
         <entry key="..\:/UTA/SWaP/app/src/main/res/layout/fragment_sign_up.xml" value="0.1981981981981982" />
+        <entry key="..\:/UTA/SWaP/app/src/main/res/layout/search_youtube.xml" value="0.14666666666666667" />
+        <entry key="..\:/UTA/SWaP/app/src/main/res/layout/search_youtube_list_row.xml" value="0.1" />
+        <entry key="..\:/UTA/SWaP/app/src/main/res/layout/search_youtube_main.xml" value="0.22" />
+        <entry key="..\:/UTA/SWaP/app/src/main/res/layout/search_youtube_player.xml" value="0.22" />
+        <entry key="..\:/UTA/SWaP/app/src/main/res/layout/search_youtube_video_item.xml" value="0.22" />
       </map>
     </option>
   </component>
