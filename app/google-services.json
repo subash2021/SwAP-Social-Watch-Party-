@@ -8,24 +8,24 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:751277427260:android:2cc83c58fe4f87797ad139",
+        "mobilesdk_app_id": "1:751277427260:android:738134b3bdfc7a677ad139",
         "android_client_info": {
-          "package_name": "com.codepath.rkpandey.swap.fragments"
+          "package_name": "com.codepath.rkpandey.swap"
         }
       },
       "oauth_client": [
         {
-          "client_id": "751277427260-8j0se97p7rsp7egjbjveeatf2g2okrrm.apps.googleusercontent.com",
+          "client_id": "751277427260-6fcl3oia82rr2rt7la8qu5fk6eiic6bk.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.codepath.rkpandey.swap.fragments",
+            "package_name": "com.codepath.rkpandey.swap",
             "certificate_hash": "63959cf469c6db22dde1a3e42995a70ff5af5143"
           }
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCFPvXDvX219HIjIaXLKdTUeParFajJmZc"
+          "current_key": "AIzaSyBdjbVD3SNhev6OM_8PeWacss2ClhsaYtM"
         }
       ],
       "services": {
