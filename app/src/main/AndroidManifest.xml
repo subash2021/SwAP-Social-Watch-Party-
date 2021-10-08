@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.codepath.rkpandey.swap"
+    package="com.codepath.rkpandey.SocialWatchParty"
     >
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -15,16 +15,16 @@
         android:theme="@style/Theme.SWaP"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".Play_act"
+            android:name="com.codepath.rkpandey.SocialWatchParty.Play_act"
             android:exported="true" />
         <activity
-            android:name=".YouTubeMainActivity"
+            android:name="com.codepath.rkpandey.SocialWatchParty.YouTubeMainActivity"
             android:exported="true" />
         <activity
-            android:name=".HomeActivity"
+            android:name="com.codepath.rkpandey.SocialWatchParty.HomeActivity"
             android:exported="true" />
         <activity
-            android:name=".splashScreenActivity"
+            android:name="com.codepath.rkpandey.SocialWatchParty.splashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,7 +33,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name="com.codepath.rkpandey.SocialWatchParty.MainActivity"
             android:exported="true" />
     </application>
 

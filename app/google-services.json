@@ -1,36 +1,73 @@
 {
   "project_info": {
-    "project_number": "751277427260",
-    "firebase_url": "https://swap-5ff31-default-rtdb.firebaseio.com",
-    "project_id": "swap-5ff31",
-    "storage_bucket": "swap-5ff31.appspot.com"
+    "project_number": "710879436653",
+    "project_id": "swap-c59d9",
+    "storage_bucket": "swap-c59d9.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:751277427260:android:738134b3bdfc7a677ad139",
+        "mobilesdk_app_id": "1:710879436653:android:52fda18b8456fe4de68464",
+        "android_client_info": {
+          "package_name": "com.codepath.rkpandey.SocialWatchParty"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "710879436653-pndc48tgdthl4egj1hn09rqh8rsbet50.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.codepath.rkpandey.SocialWatchParty",
+            "certificate_hash": "63959cf469c6db22dde1a3e42995a70ff5af5143"
+          }
+        },
+        {
+          "client_id": "710879436653-0dl3arvlkku1flp0h78lgsjkk7rmpm7j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABKaGN5VazIrK_7mbHL666frN0tx9qilE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "710879436653-0dl3arvlkku1flp0h78lgsjkk7rmpm7j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:710879436653:android:afc4e76683169486e68464",
         "android_client_info": {
           "package_name": "com.codepath.rkpandey.swap"
         }
       },
       "oauth_client": [
         {
-          "client_id": "751277427260-6fcl3oia82rr2rt7la8qu5fk6eiic6bk.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.codepath.rkpandey.swap",
-            "certificate_hash": "63959cf469c6db22dde1a3e42995a70ff5af5143"
-          }
+          "client_id": "710879436653-0dl3arvlkku1flp0h78lgsjkk7rmpm7j.apps.googleusercontent.com",
+          "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBdjbVD3SNhev6OM_8PeWacss2ClhsaYtM"
+          "current_key": "AIzaSyABKaGN5VazIrK_7mbHL666frN0tx9qilE"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "710879436653-0dl3arvlkku1flp0h78lgsjkk7rmpm7j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
