@@ -26,7 +26,7 @@ public class YouTubeConnector {
     //Developer API key a developer can obtain after creating a new project in google developer console
     //Developer has to enable YouTube Data API v3 in the project
     //Add credentials and then provide the Application's package name and SHA fingerprint
-    public static final String KEY = "AIzaSyAqhMnt7IbbWKRm08qD8cG8gYys7ptvATk"; //"API_KEY_FROM_GOOGLE_CLOUD_CONSOLE";
+    public static final String KEY = "AIzaSyAtlTgLUHayVfFZ1TpOykgG46OjNfiEl0c"; //"API_KEY_FROM_GOOGLE_CLOUD_CONSOLE";
 
     //Package name of the app that will call the YouTube Data API
     public static final String PACKAGENAME = "com.codepath.rkpandey.swap";
