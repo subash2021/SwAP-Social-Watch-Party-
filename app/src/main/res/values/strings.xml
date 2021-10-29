@@ -22,4 +22,20 @@
     <string name="search_youtube">YouTube search</string>
     <string name="search_youtube_keywords">Keywords input</string>
     <string name="search_youtube_btn">search</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="youtube">YouTube</string>
+    <string name="profile">Profile</string>
+    <string name="notifications">Notifications</string>
+    <string name="inbox">Inbox</string>
+    <string name="youtubee">Youtube</string>
+    <string name="netflix">Netflix</string>
+    <string name="settings">Settings</string>
+    <string name="about">About</string>
+    <string name="profilee">Profilee</string>
+    <string name="chat">Chat</string>
+    <string name="addfriend">Addfriend</string>
+    <string name="logout">logout</string>
+    <string name="logoutt">Logout</string>
+    <string name="add_friend">Add friend</string>
+
 </resources>

@@ -6,6 +6,7 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,17 +17,26 @@ import android.widget.Toast;
 import com.codepath.rkpandey.SocialWatchParty.HomeActivity;
 import com.codepath.rkpandey.SocialWatchParty.R;
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class SignUpFragment extends Fragment {
+    public static final String TAG = "tag";
     private FirebaseAuth mAuth;
     private EditText FullName;
     private EditText SignUpEmail;
     private EditText signUpPassword;
     private EditText SignUpPasswordConfirm;
     private Button SignUpButton;
+    FirebaseFirestore fstore;
+    String userID;
     public SignUpFragment() {
         // Required empty public constructor
     }
@@ -42,17 +52,30 @@ public class SignUpFragment extends Fragment {
         signUpPassword = view.findViewById(R.id.signUpPassword);
         SignUpPasswordConfirm = view.findViewById(R.id.confirmPassword);
         SignUpButton = view.findViewById(R.id.signUpButton);
+        fstore = FirebaseFirestore.getInstance();
 
         SignUpButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String Email = SignUpEmail.getText().toString();
                 String Password = signUpPassword.getText().toString();
+                String fullname = FullName.getText().toString();
                 mAuth.createUserWithEmailAndPassword(Email,Password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
                             Toast.makeText(getContext(), "Account Creation Successful", Toast.LENGTH_SHORT).show();
+                            userID = mAuth.getCurrentUser().getUid();
+                            DocumentReference documentReference = fstore.collection("users").document(userID);
+                            Map<String,Object> user = new HashMap<>();
+                            user.put("fName", fullname);
+                            user.put("Email", Email);
+                            documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                @Override
+                                public void onSuccess(@NonNull Void unused) {
+                                    Log.d(TAG, "Onsuccess: User Profile is Created for "+userID);
+                                }
+                            });
                             Intent intent = new Intent(getContext(), HomeActivity.class);
                             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
                             startActivity(intent);

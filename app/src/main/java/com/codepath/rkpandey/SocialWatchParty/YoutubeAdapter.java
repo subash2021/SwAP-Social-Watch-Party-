@@ -95,11 +95,11 @@ public class YoutubeAdapter extends RecyclerView.Adapter<YoutubeAdapter.MyViewHo
         //resize method resizes the image to the specified size in pixels wrt width and height
         //centerCrop crops an image inside of the bounds specified by resize(int, int) rather than distorting the aspect ratio
         //into method asynchronously fulfills the request into the specified Target
-        Picasso.with(mContext)
-                .load(singleVideo.getThumbnailURL())
-                .resize(480,270)
-                .centerCrop()
-                .into(holder.thumbnail);
+//        Picasso.with(mContext)
+//                .load(singleVideo.getThumbnailURL())
+//                .resize(480,270)
+//                .centerCrop()
+//                .into(holder.thumbnail);
 
         //setting on click listener for each video_item to launch clicked video in new activity
         //onClick method called when the view is clicked

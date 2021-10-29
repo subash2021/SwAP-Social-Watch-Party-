@@ -50,7 +50,7 @@ public class YouTubeMainActivity extends AppCompatActivity {
         //method to fill the activity that is launched with  the activity_main.xml layout file
         setContentView(R.layout.search_youtube_main);
 //        String str = getIntent().getExtras().getString("search_keywords");
-        String str = "Marvel";
+        String str = "";
 
         //initailising the objects with their respective view in activity_main.xml file
         mProgressDialog = new ProgressDialog(this);

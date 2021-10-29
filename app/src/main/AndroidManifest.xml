@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.codepath.rkpandey.SocialWatchParty"
-    >
+    package="com.codepath.rkpandey.SocialWatchParty">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -15,16 +17,22 @@
         android:theme="@style/Theme.SWaP"
         android:usesCleartextTraffic="true">
         <activity
-            android:name="com.codepath.rkpandey.SocialWatchParty.Play_act"
+            android:name=".EditProfile"
             android:exported="true" />
         <activity
-            android:name="com.codepath.rkpandey.SocialWatchParty.YouTubeMainActivity"
+            android:name=".ProfileActivity"
             android:exported="true" />
         <activity
-            android:name="com.codepath.rkpandey.SocialWatchParty.HomeActivity"
+            android:name=".Play_act"
             android:exported="true" />
         <activity
-            android:name="com.codepath.rkpandey.SocialWatchParty.splashScreenActivity"
+            android:name=".YouTubeMainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".splashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,8 +41,21 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.codepath.rkpandey.SocialWatchParty.MainActivity"
+            android:name=".MainActivity"
             android:exported="true" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.codepath.rkpandey.SocialWatchParty"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
