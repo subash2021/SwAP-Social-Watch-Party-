@@ -1,7 +1,6 @@
 package com.codepath.rkpandey.SocialWatchParty;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.FragmentActivity;
@@ -23,6 +22,8 @@ public class HomeActivity extends FragmentActivity implements NavigationView.OnN
     NavigationView navigationView;
 
     String Fullname, Email, Phone;
+    String searchInput, mRecyclerView, btnSearch;
+    Button YoutubeButton;
 
 
     @Override
@@ -45,10 +46,10 @@ public class HomeActivity extends FragmentActivity implements NavigationView.OnN
         NavController navController = Navigation.findNavController(this, R.id.navHostFragment );
         Navigation.setViewNavController(navigationView, navController );
 
-        ImageView WatchTogether = findViewById(R.id.WatchTogether);
+        ImageView youtubeImage = findViewById(R.id.youtubeImage);
 
 //       Button SignOutButton = findViewById(R.id.signOutButton);
-//       Button YouTubeButton = findViewById(R.id.youtubebtn);
+       //Button YouTubeButton = findViewById(R.id.youtubebtn);
 //        Button ProfileButton = findViewById(R.id.button_profile);
 //       SignOutButton.setOnClickListener(new View.OnClickListener() {
 //           @Override
@@ -72,7 +73,7 @@ public class HomeActivity extends FragmentActivity implements NavigationView.OnN
 //                finish();
 //            }
 //        });
-        WatchTogether.setOnClickListener(new View.OnClickListener() {
+        youtubeImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(HomeActivity.this, YouTubeMainActivity.class));
@@ -96,12 +97,16 @@ public class HomeActivity extends FragmentActivity implements NavigationView.OnN
         switch (item.getItemId()){
             case R.id.menuYoutubee:
                 Intent intent = new Intent(HomeActivity.this, YouTubeMainActivity.class);
+                intent.putExtra("searchInput", searchInput);
+                intent.putExtra("mRecyclerView", mRecyclerView);
+                intent.putExtra("btnSearch",btnSearch);
                 startActivity(intent);
                 break;
         }
 
         switch (item.getItemId()){
             case R.id.menulogout:
+                FirebaseAuth.getInstance().signOut();
                 Intent intent = new Intent(HomeActivity.this, MainActivity.class);
                 startActivity(intent);
                 break;

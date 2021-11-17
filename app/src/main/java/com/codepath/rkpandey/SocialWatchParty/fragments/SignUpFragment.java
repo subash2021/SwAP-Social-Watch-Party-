@@ -7,6 +7,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import android.util.Log;
+import android.util.Patterns;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -60,11 +61,53 @@ public class SignUpFragment extends Fragment {
                 String Email = SignUpEmail.getText().toString();
                 String Password = signUpPassword.getText().toString();
                 String fullname = FullName.getText().toString();
+
+                if(Email.isEmpty() & Password.isEmpty() & fullname.isEmpty())
+                {
+                    Toast.makeText(getContext(), "Fields cannot be empty", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                if(fullname.isEmpty())
+                {
+                    Toast.makeText(getContext(), "Fullname cannot be empty", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                if(Email.isEmpty())
+                {
+                    Toast.makeText(getContext(), "Email cannot be empty", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                if(!Patterns.EMAIL_ADDRESS.matcher(Email).matches())
+                {
+                    Toast.makeText(getContext(), "Invalid email", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                if(Password.isEmpty())
+                {
+                    Toast.makeText(getContext(), "Password cannot be empty", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                if(Password.length() < 6)
+                {
+                    Toast.makeText(getContext(), "Password cannot be less than 6 characters", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                if (signUpPassword != SignUpPasswordConfirm)
+                {
+                    Toast.makeText(getContext(), "Password does't match", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
                 mAuth.createUserWithEmailAndPassword(Email,Password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
+
+
                         if(task.isSuccessful()){
-                            Toast.makeText(getContext(), "Account Creation Successful", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getContext(), "Account is Created Sucessfully", Toast.LENGTH_SHORT).show();
                             userID = mAuth.getCurrentUser().getUid();
                             DocumentReference documentReference = fstore.collection("users").document(userID);
                             Map<String,Object> user = new HashMap<>();

@@ -19,8 +19,9 @@
             android:id="@+id/signUpName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Full Name"
-            android:inputType="text" />
+            android:hint="  Full Name"
+            android:inputType="text"
+            android:drawableLeft="@drawable/ic_person"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -37,8 +38,9 @@
             android:id="@+id/signUpEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email"
-            android:inputType="textEmailAddress" />
+            android:hint="  Email"
+            android:inputType="textEmailAddress"
+            android:drawableLeft="@drawable/ic_email"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -54,8 +56,9 @@
             android:id="@+id/signUpPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="password"
-            android:inputType="textPassword" />
+            android:hint="  Password"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/ic_lock"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -72,8 +75,9 @@
             android:id="@+id/confirmPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Confirm Password"
-            android:inputType="textPassword" />
+            android:hint="  Confirm Password"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/ic_lock"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button

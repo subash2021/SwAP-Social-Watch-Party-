@@ -56,7 +56,7 @@ public class ProfileActivity extends AppCompatActivity {
         Email = findViewById(R.id.email2);
         mAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
-        Button SignOutButton = findViewById(R.id.SignOutButton);
+        SignOutButton = findViewById(R.id.SignOutButton);
         storageReference = FirebaseStorage.getInstance().getReference();
 
         userId = mAuth.getCurrentUser().getUid();
@@ -119,8 +119,6 @@ public class ProfileActivity extends AppCompatActivity {
                i.putExtra("Fullname", Fullname.getText().toString());
                i.putExtra("Email",Email.getText().toString());
                i.putExtra("Phone","9876543210");
-                //selectedImage =
-                //Picasso.get().load(uri).into(selectedImage);
                startActivity(i);
                finish();
 
@@ -130,8 +128,9 @@ public class ProfileActivity extends AppCompatActivity {
         SignOutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                 FirebaseAuth.getInstance().signOut();
-                startActivity(new Intent(ProfileActivity.this,MainActivity.class));
+                FirebaseAuth.getInstance().signOut();
+                Intent intent = new Intent(ProfileActivity.this, MainActivity.class);
+                startActivity(intent);
                 finish();
             }
         });

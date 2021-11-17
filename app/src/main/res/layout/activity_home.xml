@@ -60,19 +60,19 @@
             app:defaultNavHost="true"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/layoutToolBar"
-            app:layout_constraintVertical_bias="1.0"
+            app:layout_constraintVertical_bias="0.0"
             app:navGraph="@navigation/mainnav"
             tools:layout_editor_absoluteX="0dp" />
 
         <ImageView
-            android:id="@+id/WatchTogether"
+            android:id="@+id/youtubeImage"
             android:layout_width="129dp"
             android:layout_height="109dp"
-            android:layout_marginBottom="404dp"
+            android:layout_marginBottom="360dp"
             android:src="@drawable/ic_youtube"
             app:layout_constraintBottom_toBottomOf="@+id/navHostFragment"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.451"
+            app:layout_constraintHorizontal_bias="0.436"
             app:layout_constraintStart_toStartOf="parent" />
 
         <ImageView
@@ -84,14 +84,14 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.451"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/WatchTogether" />
+            app:layout_constraintTop_toBottomOf="@+id/youtubeImage" />
 
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="109dp"
             android:layout_height="84dp"
-            android:layout_marginStart="36dp"
-            android:layout_marginTop="132dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="96dp"
             android:scrollbarSize="2dp"
             android:src="@drawable/chat"
             app:layout_constraintStart_toStartOf="parent"
@@ -109,16 +109,32 @@
             app:layout_constraintTop_toBottomOf="@+id/imageView2"
             app:layout_constraintVertical_bias="0.786" />
 
-        <ImageView
-            android:id="@+id/imageView7"
-            android:layout_width="362dp"
-            android:layout_height="94dp"
-            android:layout_marginBottom="168dp"
-            android:src="@drawable/watch4"
-            app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="@font/nicefont1"
+            android:text="Let's Watch Together"
+            android:textColor="#FFEB3B"
+            android:textColorLink="#FFFFFF"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toTopOf="@+id/youtubeImage"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.489"
+            app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font2"
+            android:text="WELCOME !!"
+            android:textSize="60sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutToolBar" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
