@@ -30,7 +30,24 @@
         <entry key="..\:/UTA/SWaP/app/src/main/res/layout/search_youtube_main.xml" value="0.22" />
         <entry key="..\:/UTA/SWaP/app/src/main/res/layout/search_youtube_player.xml" value="0.22" />
         <entry key="..\:/UTA/SWaP/app/src/main/res/layout/search_youtube_video_item.xml" value="0.22" />
-        <entry key="..\:/UTA/seniorProject2/SWaP/app/src/main/res/layout/fragment_sign_up.xml" value="0.18881578947368421" />
+        <entry key="..\:/Users/mphuy/AndroidStudioProjects/SWaP1/app/src/main/res/drawable/chat.xml" value="1.375" />
+        <entry key="..\:/Users/mphuy/AndroidStudioProjects/SWaP1/app/src/main/res/drawable/chat_receiver.xml" value="0.2708333333333333" />
+        <entry key="..\:/Users/mphuy/AndroidStudioProjects/SWaP1/app/src/main/res/drawable/chat_sender.xml" value="0.2708333333333333" />
+        <entry key="..\:/Users/mphuy/AndroidStudioProjects/SWaP1/app/src/main/res/drawable/edit_text.xml" value="0.2708333333333333" />
+        <entry key="..\:/Users/mphuy/AndroidStudioProjects/SWaP1/app/src/main/res/drawable/round_shape.xml" value="0.2708333333333333" />
+        <entry key="..\:/Users/mphuy/AndroidStudioProjects/SWaP1/app/src/main/res/drawable/send.xml" value="0.2708333333333333" />
+        <entry key="..\:/Users/mphuy/AndroidStudioProjects/SWaP1/app/src/main/res/layout/activity_chat_display.xml" value="0.3" />
+        <entry key="..\:/Users/mphuy/AndroidStudioProjects/SWaP1/app/src/main/res/layout/activity_home.xml" value="0.2546875" />
+        <entry key="..\:/Users/mphuy/AndroidStudioProjects/SWaP1/app/src/main/res/layout/activity_main.xml" value="0.2546875" />
+        <entry key="..\:/Users/mphuy/AndroidStudioProjects/SWaP1/app/src/main/res/layout/activity_playing.xml" value="0.2546875" />
+        <entry key="..\:/Users/mphuy/AndroidStudioProjects/SWaP1/app/src/main/res/layout/activity_you_tube_main.xml" value="0.2546875" />
+        <entry key="..\:/Users/mphuy/AndroidStudioProjects/SWaP1/app/src/main/res/layout/chat_row.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/mphuy/AndroidStudioProjects/SWaP1/app/src/main/res/layout/dialog_layout.xml" value="0.2546875" />
+        <entry key="..\:/Users/mphuy/AndroidStudioProjects/SWaP1/app/src/main/res/layout/fragment_chat_fragment.xml" value="0.2546875" />
+        <entry key="..\:/Users/mphuy/AndroidStudioProjects/SWaP1/app/src/main/res/layout/fragment_sign_up.xml" value="0.17300724637681159" />
+        <entry key="..\:/Users/mphuy/AndroidStudioProjects/SWaP1/app/src/main/res/layout/receiver_layout.xml" value="0.2546875" />
+        <entry key="..\:/Users/mphuy/AndroidStudioProjects/SWaP1/app/src/main/res/layout/search_youtube.xml" value="0.2546875" />
+        <entry key="..\:/Users/mphuy/AndroidStudioProjects/SWaP1/app/src/main/res/layout/sender_layout.xml" value="0.2546875" />
       </map>
     </option>
   </component>

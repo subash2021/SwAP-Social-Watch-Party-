@@ -56,8 +56,8 @@ public class SignInFragment extends Fragment {
                     mAuth.signInWithEmailAndPassword(Email,Password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
+                            progressDialogue.dismiss();
                             if(task.isSuccessful()){
-                                progressDialogue.dismiss();
                                 Intent intent = new Intent(getContext(), HomeActivity.class);
                                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
                                 startActivity(intent);
@@ -74,6 +74,12 @@ public class SignInFragment extends Fragment {
                             e.printStackTrace();
                         }
                     });
+                    if(mAuth.getCurrentUser()!=null)
+                    {
+                        Intent intent = new Intent(getContext(),HomeActivity.class);
+                        startActivity(intent);
+                    }
+
 
                 }
             }

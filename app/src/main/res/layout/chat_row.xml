@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com.apk.res-auto"
+    xmlns:app1="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopof = "parent"
+        android:background="#fff"
+        tools:ignore="MissingConstraints">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/proImg"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="5dp"
+            android:padding="15dp"
+            android:src="@drawable/add_friend"
+            app1:civ_border_color="#FF000000"
+            app1:civ_border_width="2dp">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:id="@+id/user_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/proImg"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="USERNAME"
+            android:textSize="16sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_view"
+
+            android:layout_toRightOf="@+id/proImg"
+            android:gravity="center_vertical"
+            android:padding="2dp"
+            android:text="No chats yet"
+            android:textStyle="italic"/>
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

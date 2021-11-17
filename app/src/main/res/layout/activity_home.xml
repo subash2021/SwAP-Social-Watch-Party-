@@ -14,15 +14,58 @@
         android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.006" />
+
     <Button
         android:id="@+id/youtubebtn"
-        android:text="YouTube"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="YouTube"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signOutButton" />
-        ></androidx.constraintlayout.widget.ConstraintLayout>
+        app:layout_constraintTop_toBottomOf="@+id/signOutButton"
+        app:layout_constraintVertical_bias="0.434" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/youtubebtn"
+        android:id="@+id/container_home">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="407dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="4dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/youtubebtn"
+        app:layout_constraintVertical_bias="0.975">
+
+        <ImageView
+            android:id="@+id/add_friends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/add_friend"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/chat"
+            tools:ignore="VectorDrawableCompat" />
+    </LinearLayout>
+    ></androidx.constraintlayout.widget.ConstraintLayout>
